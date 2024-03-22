@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<title>Document</title>
+	<link href="style.css" rel="stylesheet">
+	<link href="bootstrap.css" rel="stylesheet">
+	<script src="bootstrap.js">
+	</script><!-- nav icons link  cards icons link counter icons link-->
+	<link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css' rel='stylesheet'>
+	<style>
+	           input{
+	              display: none;
+	          }
+	          label{
+	              display: inline-block;
+	              height: 100%;
+	              margin: 60px 20px;
+	              line-height: 60px;
+	              font-size: 30px;
+	              color: black;
+				
+	             
+	          }
+	          label:hover{
+	              color:darkred;
+				  font-weight: bolder;
+	          }
+			
+	          .hidden{
+	              display: none;
+	          }
+	         
+	</style>
+</head>
+<body class="body">
+	 <!-- Back to top button -->
+<button
+type="button"
+class="btn btn-danger btn-floating btn-lg"
+id="btn-back-to-top"
+>
+<i class="fas fa-arrow-up"></i>
+</button>
+	<!-- copied nav bar from the home page with some changes -->
+	<header class="fixed-top">
+		<nav class="custom-navbar navbar navbar-expand-md">
+			<div class="container">
+				<div class="logo">
+					<table>
+						<tr>
+							<td class="w-50">
+								<div class="logo h-75">
+									<h1><a><span id="s">Sirius</span></a></h1><a><span id="j">Jewelry</span></a>
+									<h5 id="since">Since 1992</h5>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div><button aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler text-bg-light" data-bs-target="#navbarsFurni" data-bs-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+				<div class="collapse navbar-collapse" id="navbarsFurni">
+					<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">Home</a>
+						</li>
+						<li>
+							<a class="nav-link" href="index.html#aboutus">About us</a>
+						</li>
+						<li>
+							<a class="nav-link" href="itemsmenupage.html">Items</a>
+						</li>
+						<li>
+							<a class="nav-link" href="index.html#tableform">Contact us</a>
+						</li>
+					</ul>
+					<div class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5" style="margin-left: 2em">
+						<div class="navicons">
+							<ul>
+								<li>
+									<a class="nav-link" href="#"><i class="fas fa-user" style="font-size:24px"></i>
+									</a>
+								</li>
+								<li>
+									<a class="nav-link" href="#"><i class="fas fa-shopping-bag" style="font-size:24px"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header><!-- created the photos gallery with categories, then inserted the overlay feature then the modal -->
+	<div class="container-fluid">
+		<h1 style="margin-top: 100px;text-align: center;color: darkred;font-weight: bolder;">Enjoy Shopping</h1><input checked id="Check1" name="photos" type="radio"> <input id="Check2" name="photos" type="radio"> <input id="Check3" name="photos" type="radio"> <input id="Check4" name="photos" type="radio"> <input id="Check5" name="photos" type="radio"> <input id="Check6" name="photos" type="radio">
+		<div class="container-fluid" id="itemscont">
+			<div class="categoriescont">
+				<label class="category-label" for="Check1">Earrings</label> <label class="category-label" for="Check2">Necklaces</label> <label class="category-label" for="Check3">Bracelets</label> <label class="category-label" for="Check4">Rings</label> <label class="category-label" for="Check5">Diamond</label> <label class="category-label" for="Check6">Watches</label>
+			</div>
+			<div class="photoscont">
+				<div class="item Check1">
+					<div class="image-container"><img alt="Earrings1" class="image" src="images/products/earing1model.webp"> <img alt="Overlay Earings 1" class="overlay-img" src="images/products/earing1.jpg"></div><!-- Button to Open the Modal -->
+					 <button class="btn btn-primary" data-bs-target="#Modal1" data-bs-toggle="modal" id="view" type="button">View Details</button> <!-- The Modal -->
+					<div class="modal" id="Modal1">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<!-- Modal Header -->
+								<div class="modal-header">
+									<h4 class="modal-title">Earring</h4><button class="btn-close" data-bs-dismiss="modal" type="button"></button>
+								</div><!-- Modal body -->
+								<div class="modal-body">
+									<div class="row"><img alt="" src="images/products/earing1.jpg"> <img alt="" src="images/products/earing1model.webp"></div>
+									<div class="row">
+										<h4>select size</h4><select id="selectsize" name="size">
+											<option value="">
+												4mm-8mm
+											</option>
+											<option value="">
+												10mm-20mm
+											</option>
+											<option value="">
+												25mm
+											</option>
+										</select>
+									</div>
+									<div class="row">
+										<h4>select material</h4><select id="selectmaterial" name="material">
+											<option value="">
+												Gold
+											</option>
+											<option value="">
+												White Gold
+											</option>
+											<option value="">
+												Silver
+											</option>
+											<option value="">
+												Platinum
+											</option>
+										</select>
+									</div>
+								</div><!-- Modal footer -->
+								<div class="modal-footer">
+									<button class="btn addcart" type="button">Add to Cart</button>
+									<button class="btn via" type="button">Send Via WP</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item Check1" style="display: block;">
+					<div class="image-container"><img alt="Earrings2" class="image" src="images/products/earings2model.jpg"> <img alt="Overlay Earings 2" class="overlay-img" src="images/products/earing2.webp"></div><button class="btn btn-primary" data-bs-target="#Modal2" data-bs-toggle="modal" id="view" type="button">View Details</button> <!-- The Modal -->
+					<div class="modal" id="Modal2">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<!-- Modal Header -->
+								<div class="modal-header">
+									<h4 class="modal-title">Earring</h4><button class="btn-close" data-bs-dismiss="modal" type="button"></button>
+								</div><!-- Modal body -->
+								<div class="modal-body">
+									<div class="row"><img alt="" src="images/products/earing2.webp"> <img alt="" src="images/products/earings2model.jpg"></div>
+									<div class="row">
+										<h4>select size</h4><select id="selectsize" name="size">
+											<option value="">
+												4mm-8mm
+											</option>
+											<option value="">
+												10mm-20mm
+											</option>
+											<option value="">
+												25mm
+											</option>
+										</select>
+									</div>
+									<div class="row">
+										<h4>select material</h4><select id="selectmaterial" name="material">
+											<option value="">
+												Gold
+											</option>
+											<option value="">
+												White Gold
+											</option>
+											<option value="">
+												Silver
+											</option>
+											<option value="">
+												Platinum
+											</option>
+										</select>
+									</div>
+								</div><!-- Modal footer -->
+								<div class="modal-footer">
+									<button class="btn addcart" type="button">Add to Cart</button>
+									<button class="btn via" type="button">Send Via WP</button>
+
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item Check1" style="display: block;">
+					<div class="image-container"><img alt="Earrings3" class="image" src="images/products/earingmodel3.jpg"> <img alt="Overlay Earings 3" class="overlay-img" src="images/products/earing3.webp"></div><button class="btn btn-primary" data-bs-target="#Modal3" data-bs-toggle="modal" id="view" type="button">View Details</button> <!-- The Modal -->
+					<div class="modal" id="Modal3">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<!-- Modal Header -->
+								<div class="modal-header">
+									<h4 class="modal-title">Earring</h4><button class="btn-close" data-bs-dismiss="modal" type="button"></button>
+								</div><!-- Modal body -->
+								<div class="modal-body">
+									<div class="row"><img alt="" src="images/products/earing3.webp"> <img alt="" src="images/products/earingmodel3.jpg"></div>
+									<div class="row">
+										<h4>select size</h4><select id="selectsize" name="size">
+											<option value="">
+												4mm-8mm
+											</option>
+											<option value="">
+												10mm-20mm
+											</option>
+											<option value="">
+												25mm
+											</option>
+										</select>
+									</div>
+									<div class="row">
+										<h4>select material</h4><select id="selectmaterial" name="material">
+											<option value="">
+												Gold
+											</option>
+											<option value="">
+												White Gold
+											</option>
+											<option value="">
+												Silver
+											</option>
+											<option value="">
+												Platinum
+											</option>
+										</select>
+									</div>
+								</div><!-- Modal footer -->
+								<div class="modal-footer">
+									<button class="btn addcart" type="button">Add to Cart</button>
+									<button class="btn via" type="button">Send Via WP</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item Check1" style="display: block;">
+					<div class="image-container"><img alt="Earrings4" class="image" src="images/products/earing4model.jpg"> <img alt="Overlay Earings 4" class="overlay-img" src="images/products/earing4.webp"></div><button class="btn btn-primary" data-bs-target="#Modal4" data-bs-toggle="modal" id="view" type="button">View Details</button> <!-- The Modal -->
+					<div class="modal" id="Modal4">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<!-- Modal Header -->
+								<div class="modal-header">
+									<h4 class="modal-title">Earring</h4><button class="btn-close" data-bs-dismiss="modal" type="button"></button>
+								</div><!-- Modal body -->
+								<div class="modal-body">
+									<div class="row"><img alt="" src="images/products/earing4.webp"> <img alt="" src="images/products/earing4model.jpg"></div>
+									<div class="row">
+										<h4>select size</h4><select id="selectsize" name="size">
+											<option value="">
+												4mm-8mm
+											</option>
+											<option value="">
+												10mm-20mm
+											</option>
+											<option value="">
+												25mm
+											</option>
+										</select>
+									</div>
+									<div class="row">
+										<h4>select material</h4><select id="selectmaterial" name="material">
+											<option value="">
+												Gold
+											</option>
+											<option value="">
+												White Gold
+											</option>
+											<option value="">
+												Silver
+											</option>
+											<option value="">
+												Platinum
+											</option>
+										</select>
+									</div>
+								</div><!-- Modal footer -->
+								<div class="modal-footer">
+									<button class="btn addcart" type="button">Add to Cart</button>
+									<button class="btn via" type="button">Send Via WP</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item Check1" style="display: block;">
+					<div class="image-container"><img alt="Earrings5" class="image" src="images/products/earing5model.webp"> <img alt="Overlay Earings 5" class="overlay-img" src="images/products/earing5.webp"></div><button class="btn btn-primary" data-bs-target="#Modal5" data-bs-toggle="modal" id="view" type="button">View Details</button> <!-- The Modal -->
+					<div class="modal" id="Modal5">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<!-- Modal Header -->
+								<div class="modal-header">
+									<h4 class="modal-title">Earring</h4><button class="btn-close" data-bs-dismiss="modal" type="button"></button>
+								</div><!-- Modal body -->
+								<div class="modal-body">
+									<div class="row"><img alt="" src="images/products/earing5.webp"> <img alt="" src="images/products/earing5model.webp"></div>
+									<div class="row">
+										<h4>select size</h4><select id="selectsize" name="size">
+											<option value="">
+												4mm-8mm
+											</option>
+											<option value="">
+												10mm-20mm
+											</option>
+											<option value="">
+												25mm
+											</option>
+										</select>
+									</div>
+									<div class="row">
+										<h4>select material</h4><select id="selectmaterial" name="material">
+											<option value="">
+												Gold
+											</option>
+											<option value="">
+												White Gold
+											</option>
+											<option value="">
+												Silver
+											</option>
+											<option value="">
+												Platinum
+											</option>
+										</select>
+									</div>
+								</div><!-- Modal footer -->
+								<div class="modal-footer">
+									<button class="btn addcart" type="button">Add to Cart</button>
+									<button class="btn via" type="button">Send Via WP</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item Check1" style="display: block;">
+					<div class="image-container"><img alt="Earrings" class="image" src="images/products/earing6model.webp"> <img alt="Overlay Earings 6" class="overlay-img" src="images/products/earing6.webp"></div><button class="btn btn-primary" data-bs-target="#Modal6" data-bs-toggle="modal" id="view" type="button">View Details</button> <!-- The Modal -->
+					<div class="modal" id="Modal6">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<!-- Modal Header -->
+								<div class="modal-header">
+									<h4 class="modal-title">Earring</h4><button class="btn-close" data-bs-dismiss="modal" type="button"></button>
+								</div><!-- Modal body -->
+								<div class="modal-body">
+									<div class="row"><img alt="" src="images/products/earing6.webp"> <img alt="" src="images/products/earing6model.webp"></div>
+									<div class="row">
+										<h4>select size</h4><select id="selectsize" name="size">
+											<option value="">
+												4mm-8mm
+											</option>
+											<option value="">
+												10mm-20mm
+											</option>
+											<option value="">
+												25mm
+											</option>
+										</select>
+									</div>
+									<div class="row">
+										<h4>select material</h4><select id="selectmaterial" name="material">
+											<option value="">
+												Gold
+											</option>
+											<option value="">
+												White Gold
+											</option>
+											<option value="">
+												Silver
+											</option>
+											<option value="">
+												Platinum
+											</option>
+										</select>
+									</div>
+								</div><!-- Modal footer -->
+								<div class="modal-footer">
+									<button class="btn addcart" type="button">Add to Cart</button>
+									<button class="btn via" type="button">Send Via WP</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item Check1" style="display: block;">
+					<div class="image-container"><img alt="Earrings7" class="image" src="images/products/earing7model.webp"> <img alt="Overlay Earings 7" class="overlay-img" src="images/products/earing7.webp"></div><button class="btn btn-primary" data-bs-target="#Modal7" data-bs-toggle="modal" id="view" type="button">View Details</button> <!-- The Modal -->
+					<div class="modal" id="Modal7">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<!-- Modal Header -->
+								<div class="modal-header">
+									<h4 class="modal-title">Earring</h4><button class="btn-close" data-bs-dismiss="modal" type="button"></button>
+								</div><!-- Modal body -->
+								<div class="modal-body">
+									<div class="row"><img alt="" src="images/products/earing7.webp"> <img alt="" src="images/products/earing7model.webp"></div>
+									<div class="row">
+										<h4>select size</h4><select id="selectsize" name="size">
+											<option value="">
+												4mm-8mm
+											</option>
+											<option value="">
+												10mm-20mm
+											</option>
+											<option value="">
+												25mm
+											</option>
+										</select>
+									</div>
+									<div class="row">
+										<h4>select material</h4><select id="selectmaterial" name="material">
+											<option value="">
+												Gold
+											</option>
+											<option value="">
+												White Gold
+											</option>
+											<option value="">
+												Silver
+											</option>
+											<option value="">
+												Platinum
+											</option>
+										</select>
+									</div>
+								</div><!-- Modal footer -->
+								<div class="modal-footer">
+									<button class="btn addcart" type="button">Add to Cart</button>
+									<button class="btn via" type="button">Send Via WP</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item Check1" style="display: block;">
+					<div class="image-container"><img alt="Earrings8" class="image" src="images/products/earing8model.webp"> <img alt="Overlay Earings 8" class="overlay-img" src="images/products/earing8.webp"></div><button class="btn btn-primary" data-bs-target="#Modal8" data-bs-toggle="modal" id="view" type="button">View Details</button> <!-- The Modal -->
+					<div class="modal" id="Modal8">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<!-- Modal Header -->
+								<div class="modal-header">
+									<h4 class="modal-title">Earring</h4><button class="btn-close" data-bs-dismiss="modal" type="button"></button>
+								</div><!-- Modal body -->
+								<div class="modal-body">
+									<div class="row"><img alt="" src="images/products/earing8.webp"> <img alt="" src="images/products/earing8model.webp"></div>
+									<div class="row">
+										<h4>select size</h4><select id="selectsize" name="size">
+											<option value="">
+												4mm-8mm
+											</option>
+											<option value="">
+												10mm-20mm
+											</option>
+											<option value="">
+												25mm
+											</option>
+										</select>
+									</div>
+									<div class="row">
+										<h4>select material</h4><select id="selectmaterial" name="material">
+											<option value="">
+												Gold
+											</option>
+											<option value="">
+												White Gold
+											</option>
+											<option value="">
+												Silver
+											</option>
+											<option value="">
+												Platinum
+											</option>
+										</select>
+									</div>
+								</div><!-- Modal footer -->
+								<div class="modal-footer">
+									<button class="btn addcart" type="button">Add to Cart</button>
+									<button class="btn via" type="button">Send Via WP</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class=" item Check2" style="display: none;">
+					<div class="image-container"><img alt="Necklace 1" class="image" src="images/products/necklace1model.webp"> <img alt="Overlay Necklace 1" class="overlay-img" src="images/products/necklace1.webp"></div><button class="btn btn-primary" data-bs-target="#Modal9" data-bs-toggle="modal" id="view" type="button">View Details</button> <!-- The Modal -->
+					<div class="modal" id="Modal9">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<!-- Modal Header -->
+								<div class="modal-header">
+									<h4 class="modal-title">Necklace</h4><button class="btn-close" data-bs-dismiss="modal" type="button"></button>
+								</div><!-- Modal body -->
+								<div class="modal-body">
+									<div class="row"><img alt="" src="images/products/necklace1.webp"> <img alt="" src="images/products/necklace1model.webp"></div>
+									<div class="row">
+										<h4>select size</h4><select id="selectsize" name="size">
+											<option value="">
+												35-41cm
+											</option>
+											<option value="">
+												45-48cm
+											</option>
+											<option value="">
+												51-61cm
+											</option>
+										</select>
+									</div>
+									<div class="row">
+										<h4>select material</h4><select id="selectmaterial" name="material">
+											<option value="">
+												Gold
+											</option>
+											<option value="">
+												White Gold
+											</option>
+											<option value="">
+												Silver
+											</option>
+											<option value="">
+												Platinum
+											</option>
+										</select>
+									</div>
+								</div><!-- Modal footer -->
+								<div class="modal-footer">
+									<button class="btn addcart" type="button">Add to Cart</button>
+									<button class="btn via" type="button">Send Via WP</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class=" item Check2" style="display: none;">
+					<div class="image-container"><img alt="Necklace 2" class="image" src="images/products/necklace2model.webp"> <img alt="Overlay Necklace 2" class="overlay-img" src="images/products/necklace2.webp"></div><button class="btn btn-primary" data-bs-target="#Modal10" data-bs-toggle="modal" id="view" type="button">View Details</button> <!-- The Modal -->
+					<div class="modal" id="Modal10">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<!-- Modal Header -->
+								<div class="modal-header">
+									<h4 class="modal-title">Necklace</h4><button class="btn-close" data-bs-dismiss="modal" type="button"></button>
+								</div><!-- Modal body -->
+								<div class="modal-body">
+									<div class="row"><img alt="" src="images/products/necklace2.webp"> <img alt="" src="images/products/necklace2model.webp"></div>
+									<div class="row">
+										<h4>select size</h4><select id="selectsize" name="size">
+											<option value="">
+												35-41cm
+											</option>
+											<option value="">
+												45-48cm
+											</option>
+											<option value="">
+												51-61cm
+											</option>
+										</select>
+									</div>
+									<div class="row">
+										<h4>select material</h4><select id="selectmaterial" name="material">
+											<option value="">
+												Gold
+											</option>
+											<option value="">
+												White Gold
+											</option>
+											<option value="">
+												Silver
+											</option>
+											<option value="">
+												Platinum
+											</option>
+										</select>
+									</div>
+								</div><!-- Modal footer -->
+								<div class="modal-footer">
+									<button class="btn addcart" type="button">Add to Cart</button>
+									<button class="btn via" type="button">Send Via WP</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class=" item Check2" style="display: none;">
+					<div class="image-container"><img alt="Necklace 3" class="image" src="images/products/necklace3model.webp"> <img alt="Overlay Necklace 3" class="overlay-img" src="images/products/necklace3.webp"></div><button class="btn btn-primary" data-bs-target="#Modal11" data-bs-toggle="modal" id="view" type="button">View Details</button> <!-- The Modal -->
+					<div class="modal" id="Modal11">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<!-- Modal Header -->
+								<div class="modal-header">
+									<h4 class="modal-title">Necklace</h4><button class="btn-close" data-bs-dismiss="modal" type="button"></button>
+								</div><!-- Modal body -->
+								<div class="modal-body">
+									<div class="row"><img alt="" src="images/products/necklace3.webp"> <img alt="" src="images/products/necklace3model.webp"></div>
+									<div class="row">
+										<h4>select size</h4><select id="selectsize" name="size">
+											<option value="">
+												35-41cm
+											</option>
+											<option value="">
+												45-48cm
+											</option>
+											<option value="">
+												51-61cm
+											</option>
+										</select>
+									</div>
+									<div class="row">
+										<h4>select material</h4><select id="selectmaterial" name="material">
+											<option value="">
+												Gold
+											</option>
+											<option value="">
+												White Gold
+											</option>
+											<option value="">
+												Silver
+											</option>
+											<option value="">
+												Platinum
+											</option>
+										</select>
+									</div>
+								</div><!-- Modal footer -->
+								<div class="modal-footer">
+									<button class="btn addcart" type="button">Add to Cart</button>
+									<button class="btn via" type="button">Send Via WP</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class=" item Check2" style="display: none;">
+					<div class="image-container"><img alt="Necklace 4" class="image" src="images/products/necklace4model.jpg"> <img alt="Overlay Necklace 4" class="overlay-img" src="images/products/necklace4.webp"></div><button class="btn btn-primary" data-bs-target="#Modal12" data-bs-toggle="modal" id="view" type="button">View Details</button> <!-- The Modal -->
+					<div class="modal" id="Modal12">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<!-- Modal Header -->
+								<div class="modal-header">
+									<h4 class="modal-title">Necklace</h4><button class="btn-close" data-bs-dismiss="modal" type="button"></button>
+								</div><!-- Modal body -->
+								<div class="modal-body">
+									<div class="row"><img alt="" src="images/products/necklace4.webp"> <img alt="" src="images/products/necklace4model.jpg"></div>
+									<div class="row">
+										<h4>select size</h4><select id="selectsize" name="size">
+											<option value="">
+												35-41cm
+											</option>
+											<option value="">
+												45-48cm
+											</option>
+											<option value="">
+												51-61cm
+											</option>
+										</select>
+									</div>
+									<div class="row">
+										<h4>select material</h4><select id="selectmaterial" name="material">
+											<option value="">
+												Gold
+											</option>
+											<option value="">
+												White Gold
+											</option>
+											<option value="">
+												Silver
+											</option>
+											<option value="">
+												Platinum
+											</option>
+										</select>
+									</div>
+								</div><!-- Modal footer -->
+								<div class="modal-footer">
+									<button class="btn addcart" type="button">Add to Cart</button>
+									<button class="btn via" type="button">Send Via WP</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class=" item Check2" style="display: none;">
+					<div class="image-container"><img alt="Necklace 5" class="image" src="images/products/necklace5model.webp"> <img alt="Overlay Necklace 5" class="overlay-img" src="images/products/necklace5.webp"></div><button class="btn btn-primary" data-bs-target="#Modal13" data-bs-toggle="modal" id="view" type="button">View Details</button> <!-- The Modal -->
+					<div class="modal" id="Modal13">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<!-- Modal Header -->
+								<div class="modal-header">
+									<h4 class="modal-title">Necklace</h4><button class="btn-close" data-bs-dismiss="modal" type="button"></button>
+								</div><!-- Modal body -->
+								<div class="modal-body">
+									<div class="row"><img alt="" src="images/products/necklace5.webp"> <img alt="" src="images/products/necklace5model.webp"></div>
+									<div class="row">
+										<h4>select size</h4><select id="selectsize" name="size">
+											<option value="">
+												35-41cm
+											</option>
+											<option value="">
+												45-48cm
+											</option>
+											<option value="">
+												51-61cm
+											</option>
+										</select>
+									</div>
+									<div class="row">
+										<h4>select material</h4><select id="selectmaterial" name="material">
+											<option value="">
+												Gold
+											</option>
+											<option value="">
+												White Gold
+											</option>
+											<option value="">
+												Silver
+											</option>
+											<option value="">
+												Platinum
+											</option>
+										</select>
+									</div>
+								</div><!-- Modal footer -->
+								<div class="modal-footer">
+									<button class="btn addcart" type="button">Add to Cart</button>
+									<button class="btn via" type="button">Send Via WP</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class=" item Check2" style="display: none;">
+					<div class="image-container"><img alt="Necklace 6" class="image" src="images/products/necklace6model.webp"> <img alt="Overlay Necklace 6" class="overlay-img" src="images/products/necklace6.webp"></div><button class="btn btn-primary" data-bs-target="#Modal14" data-bs-toggle="modal" id="view" type="button">View Details</button> <!-- The Modal -->
+					<div class="modal" id="Modal14">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<!-- Modal Header -->
+								<div class="modal-header">
+									<h4 class="modal-title">Necklace</h4><button class="btn-close" data-bs-dismiss="modal" type="button"></button>
+								</div><!-- Modal body -->
+								<div class="modal-body">
+									<div class="row"><img alt="" src="images/products/necklace6.webp"> <img alt="" src="images/products/necklace6model.webp"></div>
+									<div class="row">
+										<h4>select size</h4><select id="selectsize" name="size">
+											<option value="">
+												35-41cm
+											</option>
+											<option value="">
+												45-48cm
+											</option>
+											<option value="">
+												51-61cm
+											</option>
+										</select>
+									</div>
+									<div class="row">
+										<h4>select material</h4><select id="selectmaterial" name="material">
+											<option value="">
+												Gold
+											</option>
+											<option value="">
+												White Gold
+											</option>
+											<option value="">
+												Silver
+											</option>
+											<option value="">
+												Platinum
+											</option>
+										</select>
+									</div>
+								</div><!-- Modal footer -->
+								<div class="modal-footer">
+									<button class="btn addcart" type="button">Add to Cart</button>
+									<button class="btn via" type="button">Send Via WP</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class=" item Check2" style="display: none;">
+					<div class="image-container"><img alt="Necklace 7" class="image" src="images/products/necklace7model.webp"> <img alt="Overlay Necklace 7" class="overlay-img" src="images/products/necklace7.webp"></div><button class="btn btn-primary" data-bs-target="#Modal15" data-bs-toggle="modal" id="view" type="button">View Details</button> <!-- The Modal -->
+					<div class="modal" id="Modal15">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<!-- Modal Header -->
+								<div class="modal-header">
+									<h4 class="modal-title">Necklace</h4><button class="btn-close" data-bs-dismiss="modal" type="button"></button>
+								</div><!-- Modal body -->
+								<div class="modal-body">
+									<div class="row"><img alt="" src="images/products/necklace7.webp"> <img alt="" src="images/products/necklace7model.webp"></div>
+									<div class="row">
+										<h4>select size</h4><select id="selectsize" name="size">
+											<option value="">
+												35-41cm
+											</option>
+											<option value="">
+												45-48cm
+											</option>
+											<option value="">
+												51-61cm
+											</option>
+										</select>
+									</div>
+									<div class="row">
+										<h4>select material</h4><select id="selectmaterial" name="material">
+											<option value="">
+												Gold
+											</option>
+											<option value="">
+												White Gold
+											</option>
+											<option value="">
+												Silver
+											</option>
+											<option value="">
+												Platinum
+											</option>
+										</select>
+									</div>
+								</div><!-- Modal footer -->
+								<div class="modal-footer">
+									<button class="btn addcart" type="button">Add to Cart</button>
+									<button class="btn via" type="button">Send Via WP</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class=" item Check2" style="display: none;">
+					<div class="image-container"><img alt="Necklace 8" class="image" src="images/products/necklace8model.webp"> <img alt="Overlay Necklace 8" class="overlay-img" src="images/products/necklace8.webp"></div><button class="btn btn-primary" data-bs-target="#Modal16" data-bs-toggle="modal" id="view" type="button">View Details</button> <!-- The Modal -->
+					<div class="modal" id="Modal16">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<!-- Modal Header -->
+								<div class="modal-header">
+									<h4 class="modal-title">Necklace</h4><button class="btn-close" data-bs-dismiss="modal" type="button"></button>
+								</div><!-- Modal body -->
+								<div class="modal-body">
+									<div class="row"><img alt="" src="images/products/necklace8.webp"> <img alt="" src="images/products/necklace8model.webp"></div>
+									<div class="row">
+										<h4>select size</h4><select id="selectsize" name="size">
+											<option value="">
+												35-41cm
+											</option>
+											<option value="">
+												45-48cm
+											</option>
+											<option value="">
+												51-61cm
+											</option>
+										</select>
+									</div>
+									<div class="row">
+										<h4>select material</h4><select id="selectmaterial" name="material">
+											<option value="">
+												Gold
+											</option>
+											<option value="">
+												White Gold
+											</option>
+											<option value="">
+												Silver
+											</option>
+											<option value="">
+												Platinum
+											</option>
+										</select>
+									</div>
+								</div><!-- Modal footer -->
+								<div class="modal-footer">
+									<button class="btn addcart" type="button">Add to Cart</button>
+									<button class="btn via" type="button">Send Via WP</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class=" item Check3" style="display: none;">
+					<div class="image-container"><img alt="Bracelets 1" class="image" src="images/products/brac1model.webp"> <img alt="Overlay Bracelets 1" class="overlay-img" src="images/products/brac1.webp"></div>
+				</div>
+				<div class=" item Check3" style="display: none;">
+					<div class="image-container"><img alt="Bracelets 2" class="image" src="images/products/bracmodel2.webp"> <img alt="Overlay Bracelets 2" class="overlay-img" src="images/products/brac2.webp"></div>
+				</div>
+				<div class=" item Check3" style="display: none;">
+					<div class="image-container"><img alt="Bracelets 3" class="image" src="images/products/brac3model.webp"> <img alt="Overlay Bracelets 3" class="overlay-img" src="images/products/brac3.webp"></div>
+				</div>
+				<div class=" item Check3" style="display: none;">
+					<div class="image-container"><img alt="Bracelets 4" class="image" src="images/products/brac4model.webp"> <img alt="Overlay Bracelets 4" class="overlay-img" src="images/products/brac4.webp"></div>
+				</div>
+				<div class=" item Check3" style="display: none;">
+					<div class="image-container"><img alt="Bracelets 5" class="image" src="images/products/brac5model.webp"> <img alt="Overlay Bracelets 5" class="overlay-img" src="images/products/brac5.webp"></div>
+				</div>
+				<div class=" item Check3" style="display: none;">
+					<div class="image-container"><img alt="Bracelets 6" class="image" src="images/products/brac6model.webp"> <img alt="Overlay Bracelets 6" class="overlay-img" src="images/products/brac6.webp"></div>
+				</div>
+				<div class=" item Check3" style="display: none;">
+					<div class="image-container"><img alt="Bracelets 7" class="image" src="images/products/brac7model.webp"> <img alt="Overlay Bracelets 7" class="overlay-img" src="images/products/brac7.webp"></div>
+				</div>
+				<div class=" item Check3" style="display: none;">
+					<div class="image-container"><img alt="Bracelets 8" class="image" src="images/products/brac8model.webp"> <img alt="Overlay Bracelets 8" class="overlay-img" src="images/products/brac8.webp"></div>
+				</div>
+				<div class=" item Check4" style="display: none;">
+					<div class="image-container"><img alt="Rings 1" class="image" src="images/products/ring1model.webp"> <img alt="Overlay Rings 1" class="overlay-img" src="images/products/ring1.webp"></div>
+				</div>
+				<div class=" item Check4" style="display: none;">
+					<div class="image-container"><img alt="Rings 2" class="image" src="images/products/ring2model.webp"> <img alt="Overlay Rings 2" class="overlay-img" src="images/products/ring2.webp"></div>
+				</div>
+				<div class=" item Check4" style="display: none;">
+					<div class="image-container"><img alt="Rings 3" class="image" src="images/products/ring3model.webp"> <img alt="Overlay Rings 3" class="overlay-img" src="images/products/ring3.webp"></div>
+				</div>
+				<div class=" item Check4" style="display: none;">
+					<div class="image-container"><img alt="Rings 4" class="image" src="images/products/ring4model.webp"> <img alt="Overlay Rings 4" class="overlay-img" src="images/products/ring4.webp"></div>
+				</div>
+				<div class=" item Check4" style="display: none;">
+					<div class="image-container"><img alt="Rings 5" class="image" src="images/products/ring5model.webp"> <img alt="Overlay Rings 5" class="overlay-img" src="images/products/ring5.webp"></div>
+				</div>
+				<div class=" item Check4" style="display: none;">
+					<div class="image-container"><img alt="Rings 6" class="image" src="images/products/ring6model.webp"> <img alt="Overlay Rings 6" class="overlay-img" src="images/products/ring6.webp"></div>
+				</div>
+				<div class=" item Check4" style="display: none;">
+					<div class="image-container"><img alt="Rings 7" class="image" src="images/products/ring7model.webp"> <img alt="Overlay Rings 7" class="overlay-img" src="images/products/ring7.webp"></div>
+				</div>
+				<div class=" item Check4" style="display: none;">
+					<div class="image-container"><img alt="Rings 8" class="image" src="images/products/ring8model.webp"> <img alt="Overlay Rings 8" class="overlay-img" src="images/products/ring8.webp"></div>
+				</div>
+				<div class=" item Check5" style="display: none;">
+					<div class="image-container"><img alt="Diamond 1" class="image" src="images/products/diamon1model.webp"> <img alt="Overlay Diamond 1" class="overlay-img" src="images/products/diamon1.webp"></div>
+				</div>
+				<div class=" item Check5" style="display: none;">
+					<div class="image-container"><img alt="Diamond 2" class="image" src="images/products/diamon2model.jpg"> <img alt="Overlay Diamond 2" class="overlay-img" src="images/products/diamon2.webp"></div>
+				</div>
+				<div class=" item Check5" style="display: none;">
+					<div class="image-container"><img alt="Diamond 3" class="image" src="images/products/diamon3model.webp"> <img alt="Overlay Diamond 3" class="overlay-img" src="images/products/diamon3.webp"></div>
+				</div>
+				<div class=" item Check5" style="display: none;">
+					<div class="image-container"><img alt="Diamond 4" class="image" src="images/products/diamon4model.webp"> <img alt="Overlay Diamond 4" class="overlay-img" src="images/products/diamon4.webp"></div>
+				</div>
+				<div class=" item Check5" style="display: none;">
+					<div class="image-container"><img alt="Diamond 5" class="image" src="images/products/diamon5model.jpg"> <img alt="Overlay Diamond 5" class="overlay-img" src="images/products/diamon5.webp"></div>
+				</div>
+				<div class=" item Check5" style="display: none;">
+					<div class="image-container"><img alt="Diamond 6" class="image" src="images/products/diamon6model.webp"> <img alt="Overlay Diamond 6" class="overlay-img" src="images/products/diamon6.webp"></div>
+				</div>
+				<div class=" item Check5" style="display: none;">
+					<div class="image-container"><img alt="Diamond 7" class="image" src="images/products/diamon7model.webp"> <img alt="Overlay Diamond 7" class="overlay-img" src="images/products/diamon7.webp"></div>
+				</div>
+				<div class=" item Check5" style="display: none;">
+					<div class="image-container"><img alt="Diamond 8" class="image" src="images/products/diamon8model.webp"> <img alt="Overlay Diamond 8" class="overlay-img" src="images/products/diamon8.webp"></div>
+				</div>
+				<div class=" item Check6" style="display: none;">
+					<div class="image-container"><img alt="Watches 1" class="image" src="images/products/watch1.jpg"> <img alt="Overlay Watches 1" class="overlay-img" src="images/products/watch1zoom.jpg"></div>
+				</div>
+				<div class=" item Check6" style="display: none;">
+					<div class="image-container"><img alt="Watches 2" class="image" src="images/products/watch2.jpg"> <img alt="Overlay Watches 2" class="overlay-img" src="images/products/watch2zoom.png"></div>
+				</div>
+				<div class=" item Check6" style="display: none;">
+					<div class="image-container"><img alt="Watches 3" class="image" src="images/products/watch3.png"> <img alt="Overlay Watches 3" class="overlay-img" src="images/products/watch3zoom.png"></div>
+				</div>
+				<div class=" item Check6" style="display: none;">
+					<div class="image-container"><img alt="Watches 4" class="image" src="images/products/watch4.png"> <img alt="Overlay Watches 4" class="overlay-img" src="images/products/watch4zoom.png"></div>
+				</div>
+				<div class=" item Check6" style="display: none;">
+					<div class="image-container"><img alt="Watches 5" class="image" src="images/products/watch5.png"> <img alt="Overlay Watches 5" class="overlay-img" src="images/products/watch5zoom.png"></div>
+				</div>
+				<div class=" item Check6" style="display: none;">
+					<div class="image-container"><img alt="Watches 6" class="image" src="images/products/watch6.png"> <img alt="Overlay Watches 6" class="overlay-img" src="images/products/watch6zoom.png"></div>
+				</div>
+				<div class=" item Check6" style="display: none;">
+					<div class="image-container"><img alt="Watches 7" class="image" src="images/products/watch7.jpg"> <img alt="Overlay Watches 7" class="overlay-img" src="images/products/watch7zoom.jpg"></div>
+				</div>
+				<div class=" item Check6" style="display: none;">
+					<div class="image-container"><img alt="Watches 8" class="image" src="images/products/watch8.png"> <img alt="Overlay Watches 8" class="overlay-img" src="images/products/watch8zoom.png"></div>
+				</div>
+			</div>
+		</div>
+	</div><br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<hr>
+	<!-- footer section -->
+	<!-- deleted bootstrap styles to style in css -->
+	<!-- changed icons and text -->
+	<div class="container-fluid" id="footercont">
+		<footer class=" text-center text-lg-start">
+			<div class="container p-4">
+				<div class="row mt-4">
+					<div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+						<h5 class="text-uppercase mb-4">About Us</h5>
+						<p>At Sirius Jewelry, we craft elegance infused with passion, creating timeless pieces that illuminate every moment. With dedication to quality and innovation, we aspire to adorn your life with sophistication and grace.</p>
+						<div class="mt-4">
+							<div class="footericons">
+								<a class="btn btn-floating btn-lg" type="button"><i class="fab fa-facebook-f"></i></a> <!-- Dribbble -->
+								 <a class="btn btn-floating btn-lg" type="button"><i class="fab fab fa-instagram"></i></a> <!-- Twitter -->
+								 <a class="btn btn-floating btn-lg" type="button"><i class="fab fa-twitter"></i></a> <!-- Google + -->
+								 <a class="btn btn-floating btn-lg" type="button"><i class="fab fab fa-linkedin"></i></a> <!-- Linkedin -->
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+						<h5 class="text-uppercase mb-4 pb-1">Search something</h5>
+						<div class="form-outline mb-4">
+							<input class="form-control form-control-lg" id="formControlLg" type="text">
+						</div>
+						<ul class="fa-ul" style="margin-left: 1.65em;">
+							<li class="mb-3"><span class="fa-li"><i class="fa fa-map-marker"></i></span><span class="ms-2">lebanon</span></li>
+							<li class="mb-3"><span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">SiriusJewelry@hotmail.com</span></li>
+							<li class="mb-3"><span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+ 961 72 234 567</span></li>
+						</ul>
+					</div>
+					<div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+						<h5 class="text-uppercase mb-4">Opening hours</h5>
+						<table class="table text-center">
+							<tbody class="text-white">
+								<tr>
+									<td>Mon - Thu:</td>
+									<td>8am - 9pm</td>
+								</tr>
+								<tr>
+									<td>Fri - Sat:</td>
+									<td>8am - 10pm</td>
+								</tr>
+								<tr>
+									<td>Sunday:</td>
+									<td>9am - 10pm</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<iframe
+			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12094.57348593182!2d-74.00599512526003!3d40.72586666928451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2598f988156a9%3A0xd54629bdf9d61d68!2sBroadway-Lafayette%20St!5e0!3m2!1spl!2spl!4v1624523797308!5m2!1spl!2spl"
+			class="h-100 w-100" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			<div class="text-center p-3">
+				© 2024 <a class="text-white" href="https://mdbootstrap.com/">Dana Amasha</a>
+			</div>
+			
+		</div>
+		</footer>
+	</div>
+</body>
+</html>
+<!-- categories script -->
+<script>
+		             document.addEventListener("DOMContentLoaded", function () {
+		                 const categoryLabels = document.querySelectorAll('.category-label');
+		                 const items = document.querySelectorAll('.photoscont > div');
+		                 categoryLabels.forEach(function (label) {
+		                     label.addEventListener('click', function () {
+		                         const category = this.getAttribute('for'); 
+		                         items.forEach(function (item) {
+		                             // 
+		                             if (item.classList.contains(category)) {
+		                                 item.style.display= 'block'; 
+		                             } else {
+		                                 item.style.display = 'none'; 
+		                             }
+		                         });
+		                     });
+		                 });
+		             });
+		</script> 
+		<!-- back to top button -->
+<script>//Get the button
+	let mybutton = document.getElementById("btn-back-to-top");
+	
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function () {
+	  scrollFunction();
+	};
+	
+	function scrollFunction() {
+	  if (
+		document.body.scrollTop > 20 ||
+		document.documentElement.scrollTop > 20
+	  ) {
+		mybutton.style.display = "block";
+	  } else {
+		mybutton.style.display = "none";
+	  }
+	}
+	// When the user clicks on the button, scroll to the top of the document
+	mybutton.addEventListener("click", backToTop);
+	
+	function backToTop() {
+	  document.body.scrollTop = 0;
+	  document.documentElement.scrollTop = 0;
+	}</script>
